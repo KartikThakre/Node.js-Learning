@@ -1,1 +1,1 @@
-{"version":3,"file":"timesheet.d.ts","sourceRoot":"","sources":["timesheet.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,SAAS,GAAG;IACtB,UAAU,EAAE,MAAM,CAAC;IACnB,aAAa,EAAE,MAAM,CAAC;CACvB,CAAC"}
+{"version":3,"file":"timesheet.d.ts","sourceRoot":"","sources":["timesheet.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,SAAS,GAAG;IACtB,UAAU,EAAE,MAAM,CAAC;IACnB,aAAa,EAAE,MAAM,CAAC;IACtB,OAAO,EAAE,MAAM,CAAC;IAChB,aAAa,EAAE,MAAM,CAAC;IACtB,cAAc,EAAE,MAAM,CAAC;CACxB,CAAC"}
