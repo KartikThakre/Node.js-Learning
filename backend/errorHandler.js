@@ -1,0 +1,10 @@
+"use strict";
+const express = require("express");
+function errorHandler(err, req, res, next) {
+    console.error("Error:", err.message);
+    res.status(500).json({
+        error: "Internal Server Error"
+    });
+}
+module.exports = errorHandler;
+//# sourceMappingURL=errorHandler.js.map
