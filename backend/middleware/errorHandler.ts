@@ -1,4 +1,4 @@
-import express = require("express");
+
 type Request = import("express").Request;
 type Response = import("express").Response;
 type NextFunction = import("express").NextFunction;

@@ -1,4 +1,5 @@
 "use strict";
+//? We use a Promise in the fetchEmployee function because getting data from a database takes time—it doesn’t happen instantly. A Promise lets us write code that waits for the database to respond (either with data or an error) without stopping the rest of the program. It helps us handle things that take time, like loading data, in a clean and organized way.
 Object.defineProperty(exports, "__esModule", { value: true });
 function fetchEmployee() {
     return new Promise((resolve) => {
