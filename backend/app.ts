@@ -2,6 +2,9 @@ import express = require("express");
 import errorHandler from "./middleware/errorHandler";
 const employeeRoutes = require("./routes/employeeRoutes");
 const employeeMiddlewareRoutes = require("./routes/employeeMiddlewareRoutes");
+const loggermiddleware = require("./middleware/loggerMiddleware");
+const correlationIdMiddleware = require("./middleware/correlationMiddleware");
+const employeeModelRoutes = require("./routes/employeeModelRoutes");
 
 const app = express();
 
@@ -10,6 +13,14 @@ app.use(express.json());
 
 app.use(employeeRoutes);
 app.use(employeeMiddlewareRoutes);
+
+// EmployeeModelRoutes
+app.use(employeeModelRoutes);
+
+// Correlation ID Middleware
+app.use(correlationIdMiddleware);
+// Global Logger Middleware
+app.use(loggermiddleware);
 
 // Error Middleware
 // Global Middleware
