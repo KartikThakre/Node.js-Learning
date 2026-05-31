@@ -3,13 +3,16 @@ type Request = import("express").Request;
 type Response = import("express").Response;
 
 import asyncHandler = require("../middleware/asyncHandler");
+import validateEmployeeMiddleware from "../middleware/validationMiddleware";
 import employeeModelService from "../services/employeeModelService";
 
 const router = express.Router();
 
 //CREATE Employee
+//? here asyncHandler is used to wrap the async route handler. This allows us to write asynchronous code using async/await syntax without having to manually catch errors in each route. If an error occurs in the async function, it will be passed to the next middleware (errorHandler) automatically.
+//? validateEmployeeMiddleware is a middleware function that validates the incoming request body for creating a new employee. It checks if the required fields are present and if they have the correct data types. If the validation fails, it sends a 400 Bad Request response to the client with the validation errors.
 router.post(
-  "/employeeModal",
+  "/employeeModal",validateEmployeeMiddleware,
   asyncHandler(async (req: Request, res: Response): Promise<void> => {
     const employee = employeeModelService.createEmployee(req.body);
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"employeeValidator.js","sourceRoot":"","sources":["employeeValidator.ts"],"names":[],"mappings":";AAAA,SAAS,gBAAgB,CAAC,IAAS;IAEjC,OAAO,CACL,OAAO,IAAI,CAAC,UAAU,KAAK,QAAQ;QACnC,OAAO,IAAI,CAAC,OAAO,KAAK,QAAQ;QAChC,OAAO,IAAI,CAAC,IAAI,KAAK,QAAQ,CAC9B,CAAC;AACJ,CAAC;AAED,iBAAS,gBAAgB,CAAC"}
